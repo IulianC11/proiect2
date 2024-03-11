@@ -1,0 +1,917 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #000000;
+  --grey:  #0c0c0c;
+  --orange:#ff73006b;
+  --red:#ff0000;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  
+  
+}
+
+
+.top,
+.blog,
+.destinations,
+.aboutus
+ {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background-color: var(--white);
+  color: var(--white);
+  position: absolute;
+  z-index: 0;
+}
+
+
+
+/* Navbar CSS */
+.numesite{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  background-color: var(--grey);
+  height: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  
+}
+  .navbar h1{
+   color: #fff;
+   margin-left: 45%;
+   font-style:oblique;
+}
+.navbar img{
+  height: 100%;
+  padding-left: 45%;
+
+}
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  background: none;
+  color: var(--white);
+  
+  
+}
+
+.nav-menu {
+  background-color: var(--grey);
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  z-index: 2;
+  
+  
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 450ms;
+  
+  
+}
+
+
+
+.nav-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+  margin-top: 2%;
+  
+  
+  
+}
+
+.nav-text a  {
+  text-decoration: none;
+  color: var(--grey);
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+  color: var(--white);
+  
+
+}
+
+.nav-text a:hover{
+  background-color: var(--orange);
+  
+  
+}
+
+.nav-menu-items {
+  width: 100%;
+  
+  
+  
+}
+
+.navbar-toggle {
+  background-color: var(--grey);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  
+  
+}
+
+span {
+  margin-left: 16px;
+  
+}
+
+ .footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  background-color: var(--grey);
+ 
+  height: 150px;
+ }
+  
+  .footer-social ul li {
+    margin-bottom: 10px; 
+  }
+  
+
+
+.footer .footer-social p{
+  color: var(--white);
+  margin-left: -1%;
+  
+}
+
+
+
+
+   /*home*/
+.home{
+  width: 98.2vw;
+  height: 100vh;
+}
+
+
+
+   .top{
+  position: relative;
+  z-index: 1;
+}
+
+   .top img{
+   width: 100%;
+    margin-top: 3%;
+    object-fit: cover;
+  }
+
+  .top h3, p{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .top h3{
+    margin-bottom: 35%;
+  }
+
+  .top p{
+    margin-bottom: 25%;
+    font-size: 40%;
+    
+  }
+
+  
+
+  
+
+
+.btnblog{
+  position: absolute;
+  margin-bottom: 1%;
+  z-index: 1;
+  font-family: "Roboto", Sans-serif;
+  font-size: 45%;
+  width: 10%;
+  height: 6.5%;
+  line-height: 6%;
+  background: transparent;
+  border: 3px solid #fff;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+ 
+  
+    
+
+    
+    
+ }
+ .top span{
+  width:80%;
+  height:-10%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-right: 5%;
+  color: var(--white);
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+  
+ 
+}
+ .btnblog:hover
+  {
+  background-color: var(--orange);
+  border: 3px solid transparent;
+  
+}
+
+/*main*/
+
+
+.blog  {
+   display: flex;
+    position: relative;
+    z-index: 1;
+    background-color: #000000;
+    
+   
+  }
+ 
+ 
+  /*Blog*/
+
+
+
+ /*topBlog*/
+
+
+ 
+  .toop
+  {
+    
+    height: 40%;
+    width: 100%;
+    margin-bottom: 71%;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .toop h3{
+    margin-top: -11%;
+  }
+
+  .toop h3, .p1 ,.p2{
+    position: absolute;
+    z-index: 3;
+    
+    
+    
+    
+  }
+  .p1{
+    width: 50%;
+    margin-top: 5%;
+  }
+
+  .toop .p1, .p2{
+    font-size: 30px;
+  }
+
+  .toop .p2  {
+    margin-top: 20%;
+  }
+  
+
+  
+  
+
+   .bgtop{
+    width: 100%;
+    height: 100%;
+    filter: blur(4px);
+    position: absolute;
+    z-index: 1;
+    
+ 
+  }
+  /*Blog*/
+
+  /*titluuae*/
+   .uae{
+    display: flex;
+    position: absolute;
+    width: 100%; 
+    height: 10%;
+    
+    
+    
+  }
+   .titluuae {
+    width: 100%;
+    height: 10%;
+    margin-left: 35.4%;
+    margin-top: -2%;
+   
+    
+
+    
+    
+  }
+  
+   .line-top {
+    position: absolute;
+    width: 20%;
+    height: 2px; 
+    background: linear-gradient(to left, transparent, rgb(255, 255, 255)); 
+    margin-left: 30.5%;
+    margin-top: 1.9%;
+    
+    
+    
+  }
+
+  
+   
+  
+  .line {
+    position: absolute;
+    width: 20%;
+    height: 2px; 
+    background: linear-gradient(to left, rgb(255, 255, 255), transparent); 
+    margin-left: -22%;
+    margin-top: -1.6%;
+    
+      
+      
+      
+    
+    
+  }
+
+  
+/*titluuae*/
+
+
+
+
+
+
+
+
+.blog .footer{
+  margin-top: 50%;
+}
+
+  .blog
+  {
+    background-color: var(--black);
+    height: 100vw;
+    width: 100%;
+    display: flex;
+    
+  }
+
+  .cards
+  {
+    display: flex;
+    margin-top: 37%;
+    margin-right: 10%;
+    position: relative;
+    
+    
+    
+    
+  }
+    
+    
+    
+
+
+
+   .blogcard
+  {
+    display: flex;
+    width: 30%;
+    height: 45%;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .blogcardabu
+  {
+    margin-top: 0.0%;
+    width: 317px;
+    height: 237px;
+  }
+    
+    
+    
+  
+
+  .blogcardabu,
+  .blogcard
+  {
+    display: flex;
+    width: 20%; 
+    height: 30%; 
+    transition: transform 0.3s ease-out;
+    transform: scaleX(-1);
+    margin-left: 30%;
+    
+    
+  }
+  .blogcard:hover, 
+  .blogcardabu:hover 
+  {
+    transform: scaleX(-1) scale(1.1); 
+    transition: transform 0.3s ease-in;
+    
+}
+
+.abudhabi,
+.title
+{
+  transform: scaleX(-1);
+}
+
+
+
+a
+{
+  text-decoration: none;
+  color: var(--white);
+  display: flex;
+}
+  
+
+.abudhabi
+{
+  margin-right: 9%;
+  margin-top: 53%;
+  font-size: 90%;
+
+}
+  
+  .title
+  {
+    margin-top: auto;
+    display: flex;
+    margin-bottom: 69%;
+    margin-right: 10%;
+    font-size: 100%;
+  }
+    
+  
+  
+  
+  .photod,
+  .photoa
+  {
+    width: 100%;
+    height: 100%;
+  }
+    
+  .photoa
+  {
+    transform: scaleX(1.03) scaleY(1);
+  }
+
+  
+
+
+
+    
+ 
+    
+   
+  
+   
+      
+   
+    
+    
+   
+
+      
+
+      
+      
+      
+      
+      
+      
+  
+  
+    
+    
+    
+    
+   
+
+
+  @media screen and (max-width: 1600px) {
+    .top,
+    .blog,
+    .destinations,
+    .aboutus {
+      font-size: 2.5rem;
+    }
+  
+    .navbar {
+      height: 70px;
+    }
+  
+    .navbar img {
+      padding-left: 40%;
+    }
+  
+    .nav-menu {
+      width: 200px;
+    }
+
+    .top h3{
+      font-size: 3rem;
+      margin-bottom: 50%;
+    }
+    
+    .top img{
+      height: 110%;
+    }
+  
+  .top span{
+    font-size: 70%;
+    margin-left: 9%;
+
+  }
+    .btnblog{
+      height: 4%;
+      width: 10%;
+    }
+    
+  
+    .toop .p1, .p2{
+      font-size: 20px;
+    }
+
+    .line-top{
+     
+      justify-content: center;
+    }
+
+    .line{
+      width: 17%;
+      margin-top: -1%;
+    }
+
+    .uae, .titluuae{
+      font-size: 90%;
+      margin-top: -3%;
+      align-items: baseline;
+      
+    }
+
+    .cards{
+      
+      align-items: center;
+    }
+    .product-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .product-card{
+      margin-top: 20px;
+    }
+    .product-price{
+      padding-top: 10px;
+    }
+
+
+  }
+  
+
+
+
+   
+
+
+    @media screen and (max-width: 790px) {
+      .top,
+      .blog,
+      .destinations,
+      .aboutus {
+        font-size: 2.5rem;
+      }
+    
+      .navbar {
+        height: 60px;
+      }
+    
+      .navbar img {
+        padding-left: 40%;
+      }
+    
+      .nav-menu {
+        width: 200px;
+      }
+      
+
+      .top h3{
+        font-size: 2rem;
+        margin-bottom: 120%;
+      }
+    .top p{
+      margin-bottom:60% ;
+    }
+    
+    .top img{
+      width: auto;
+    height: 150vw;
+    margin-top: -50%;
+    
+     }
+     
+
+     .toop .p1{
+      font-size: 14px;
+      margin-top:-30%;
+    }
+
+
+    .toop .p2{
+      margin-top:4%;
+         font-size: 14px;
+    }
+    .blog{
+      height: 200vw;
+     
+  
+      }
+
+       .toop h3{
+        margin-top:-75%;
+        font-size: 40px;
+       }
+
+       .bgtop{
+        margin-top: -45%;
+       }
+
+       .cards{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: flex-end;
+        margin-top: 90%;
+       }
+
+       .blogcardabu{
+        margin-top: 10%;
+        margin-left: 26%;
+       }
+
+       .line-top{
+        width: 17%;
+        margin-left: 40%;
+      }
+  
+      .line{
+        width: 17%;
+      }
+  
+      .uae, .titluuae{
+        font-size: 70%;
+        margin-top: 1%;
+      }
+
+      .product-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .product-price{
+        padding-top: 10px;
+      }
+  
+  
+      }
+
+  
+  
+
+
+
+    @media screen and (max-width: 480px) {
+      .top,
+      .blog,
+      .destinations,
+      .aboutus {
+        font-size: 2rem;
+      }
+    
+      .navbar {
+        height: 50px;
+      }
+    
+      .navbar img {
+        padding-left: 35%;
+      }
+    
+      .nav-menu {
+        width: 180px;
+      }
+     .top img{
+      width: auto;
+      height: 210vw;
+      margin-top: -50%;
+      
+     }
+     
+     .toop .p1, .p2, h3{
+      font-size: 9px;
+      margin-bottom: 50%;
+
+    }
+
+   .blog{
+    height: 90vh;
+   }
+
+     .bgtop{
+      margin-bottom: 58%;
+     }
+
+    
+
+     .blogcardabu{
+      margin-top: 10%;
+      margin-left: 26%;
+     }
+
+
+     .line-top{
+      width: 17%;
+      margin-left: 25%;
+      height: 1%;
+    }
+
+    .line{
+      width: 14%;
+      margin-top: -33.5%;
+      height: 1%;
+      
+    }
+
+    .uae, .titluuae{
+      font-size: 90%;
+      margin-top: -3%;
+      align-items: baseline;
+      
+    }
+    .product-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .product-price{
+      padding-top: 10px;
+    }
+    
+    }
+/*Product*/
+
+
+.Products{
+  background-color: var(--white);
+  width: auto;
+  
+  
+  
+
+  
+  
+}
+.top-prod{
+  height: 50vh;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-prod h1{
+  color: var(--white);
+  font-size: 100px;
+}
+  
+ 
+  .cart-icon{
+    margin-left: 5%;
+    
+    
+  }
+  
+
+
+.product-cards{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+  
+}
+
+    .product-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 16px;
+      width: 250px;
+      margin-left: 80px;
+    }
+    
+    .product-image {
+      width: 100%;
+      border-radius: 8px;
+    }
+    
+    .product-details {
+      margin-top: 50px;
+    }
+    
+    .product-title {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    
+    .product-description {
+      font-size: 14px;
+      color: #666;
+     
+      margin-top: -1%;
+    }
+    
+    .product-price {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    
+    .add-to-cart-btn {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 16px;
+      margin-top: 40px;
+    }
+    
+    .add-to-cart-btn:hover {
+      background-color: #0056b3;
+    }
+    
+    
